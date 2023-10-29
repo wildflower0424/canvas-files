@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" entityID="http://canvas.lusd1.org/saml2" ID="_c8561c01-7557-44a3-aad6-3e4a47f290af">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:SingleLogoutService Location="https://canvas.lusd1.org/login/saml/logout" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"/>
+    <md:SingleLogoutService Location="https://canvas.lusd1.org/login/saml/logout" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+    <md:AssertionConsumerService Location="https://canvas.lusd1.org/login/saml" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" index="0" isDefault="true"/>
+  </md:SPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:SurName>Webmaster</md:SurName>
+  </md:ContactPerson>
+</md:EntityDescriptor>
